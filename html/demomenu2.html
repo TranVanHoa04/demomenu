@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .menu li {
+        float: left;
+        background-color: rgb(119, 233, 153);
+        width: 150px;
+        height: 50px;
+        list-style: none;
+        line-height: 50px;
+        position: relative;
+        text-indent: 15px;
+    }
+    
+    .menu li a {
+        text-decoration: none;
+    }
+    
+    .menu li:hover {
+        background-color: blueviolet;
+    }
+    
+    .menu li:hover>a {
+        color: yellow;
+        font-weight: bold;
+    }
+    
+    .menu li.sub-menu {
+        display: none;
+        position: absolute;
+    }
+    
+    .menu li:hover>.sub-menu {
+        display: block;
+    }
+    
+    .menu li.sub-menu li {
+        display: block;
+    }
+    
+    .menu li.sub-menu li:hover>.sub-menu {
+        top: 0;
+        left: 150px;
+    }
+</style>
+
+<body>
+    <div class="wappler">
+        <header>
+            <h1 class="test-dau">TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP THÀNH PHỐ HỒ CHÍ MINH</h1>
+        </header>
+        <ul class="menu">
+            <li><a href="iuh.edu.vn">HOME</a></li>
+            <li><a href="fit.iuh.edu.vn">SERVICES</a></li>
+            <li><a href="">CONTACT</a>
+                <ul class="sub-menu">
+                    <li><a href="">VIETTEL</a></li>
+                    <li><a href="">MOBIFONE</a></li>
+                    <li><a href="">VINAPHONE</a>
+                        <ul class="sub-menu">
+                            <li><a href="">INTERNET</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">ADSL</a></li>
+                                    <li><a href="">CAP QUANG</a></li>
+                                    <li><a href="">WIFI CC</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">4G</a></li>
+                            <li><a href="">TIVI</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">HELP</a></li>
+        </ul>
+
+    </div>
+</body>
+
+</html>
